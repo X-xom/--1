@@ -16,7 +16,7 @@ namespace ЛБ_1
 
 				int negative = -1;
 				int five = 5;
-				for (int i = 1; i < number; i++)
+				for (int i = 2; i < number; i++)
 				{
 					negative *= -1;
 					five *= 5;
