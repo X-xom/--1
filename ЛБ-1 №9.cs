@@ -10,13 +10,13 @@ namespace ЛБ_1
 			for (int number = 1; number < 7; number++)
 			{
 				float factorial = 1;
-				for (int i = 1; i <= number; i++)
+				for (int i = 2; i <= number; i++)
 					factorial *= i;
 
 
 				int negative = -1;
 				int five = 5;
-				for (int i = 2; i < number; i++)
+				for (int i = 1; i < number; i++)
 				{
 					negative *= -1;
 					five *= 5;
