@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ЛБ_1
 {
@@ -8,14 +8,13 @@ namespace ЛБ_1
 		{
 			double l = 0.1;
 			double atom = Math.Pow(10, -10);
-			Console.WriteLine(atom);
-			int cuts = 0;
+			int counter = 0;
 			while (l > atom)
 			{
 				l /= 2;
-				cuts++;
+				counter++;
 			}
-			Console.WriteLine(cuts);
+			Console.WriteLine(counter);
 			Console.ReadLine();
 		}
 	}
