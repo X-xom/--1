@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ЛБ_1
 {
@@ -12,20 +12,23 @@ namespace ЛБ_1
 			float denominator_1 = 1;
 			float denominator_2 = 1;
 
-			float tmp_delimiter, tmp_denominator;
+			float addition_del, addition_den;
+			int counter = 0;
 
-			while ((float)Math.Abs(delimiter_1 / denominator_1 - delimiter_2 / denominator_2) > .001)
+			while (Math.Abs(delimiter_1 / denominator_1 - delimiter_2 / denominator_2) > 0.001)
 			{
-				tmp_delimiter = delimiter_1 + delimiter_2;
-				tmp_denominator = denominator_1 + denominator_2;
+			    counter+=1;
+				addition_del = delimiter_1 + delimiter_2;
+				addition_den = denominator_1 + denominator_2;
 				
 				delimiter_2 = delimiter_1;
-				delimiter_1 = tmp_delimiter;
+				delimiter_1 = addition_del;
 
 				denominator_2 = denominator_1;
-				denominator_1 = tmp_denominator;
+				denominator_1 = addition_den;
+				//Console.WriteLine(delimiter_1 / denominator_1);
 			}
-			Console.WriteLine(delimiter_1 / denominator_1);
+			Console.WriteLine(counter);
 			Console.ReadKey();
 		}
 	}
