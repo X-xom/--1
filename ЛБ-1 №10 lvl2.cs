@@ -14,11 +14,11 @@ namespace ЛБ_1
 			float denominator_2 = 1;
 
 			float addition_del, addition_den;
-			int counter = 0;
+			int counter = 2;
 
 			while (Math.Abs(delimiter_1 / denominator_1 - delimiter_2 / denominator_2) > 0.001)
 			{
-			    counter+=1;
+			    	counter+=1;
 				addition_del = delimiter_1 + delimiter_2;
 				addition_den = denominator_1 + denominator_2;
 				
