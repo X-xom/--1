@@ -17,7 +17,7 @@ namespace ЛБ_1
 
 			while (Math.Abs(delimiter_1 / denominator_1 - delimiter_2 / denominator_2) > 0.001)
 			{
-			    counter+=1;
+			    	counter+=1;
 				float addition_del = delimiter_1 + delimiter_2;
 				float addition_den = denominator_1 + denominator_2;
 				
